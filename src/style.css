@@ -73,3 +73,9 @@ form {
 #addTask:hover {
   background-color: rgba(136, 136, 136, 0.151);
 }
+
+.icon {
+  background-color: white;
+  border: none;
+  color: #888;
+}

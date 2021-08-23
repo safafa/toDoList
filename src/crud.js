@@ -12,7 +12,6 @@ export const remove = (task) => {
     element.index = tasks.indexOf(element) + 1;
   });
   window.localStorage.setItem('tasks', JSON.stringify(tasks));
-  window.location.reload();
 };
 
 export const clearCompleted = (tasks) => {

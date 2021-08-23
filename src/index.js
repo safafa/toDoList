@@ -31,11 +31,10 @@ function renderList(tasks) {
     });
     const icon = document.createElement('button');
     icon.className = 'far fa-trash-alt';
-    icon.style.backgroundColor = 'white';
-    icon.style.border = 'none';
-    icon.style.color = '#888';
+    icon.classList.add('icon');
     icon.addEventListener('click', () => {
       remove(task);
+      window.location.reload();
     });
     li.appendChild(icon);
     element.appendChild(li);
