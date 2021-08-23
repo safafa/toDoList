@@ -3,5 +3,5 @@ export const checkCompletion = (status, task) => {
 };
 
 export const status = (box, task) => {
- box.checked = task;
+  box.checked = task;
 };
