@@ -3,7 +3,7 @@ const updateIndex = (tasks) => {
     element.index = tasks.indexOf(element) + 1;
   });
   window.localStorage.setItem('tasks', JSON.stringify(tasks));
-}
+};
 
 export const create = (description) => {
   const tasks = JSON.parse(window.localStorage.getItem('tasks'));
@@ -30,4 +30,3 @@ export const edit = (task, description) => {
   window.localStorage.setItem('tasks', JSON.stringify(tasks));
   window.location.reload();
 };
-
