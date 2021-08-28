@@ -27,6 +27,7 @@ function renderList(tasks) {
     span.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
         edit(task, span.innerText);
+        window.location.reload();
       }
     });
     const icon = document.createElement('button');
@@ -44,6 +45,7 @@ function renderList(tasks) {
   button.innerText = 'Clear all completed';
   button.addEventListener('click', () => {
     clearCompleted(tasks);
+    window.location.reload();
   });
   element.appendChild(document.createElement('li').appendChild(button));
 
